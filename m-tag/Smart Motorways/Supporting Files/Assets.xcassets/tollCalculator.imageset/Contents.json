@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "iconfinder_2305635_calc_calculation_calculator_count_finance_icon.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}

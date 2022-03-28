@@ -1,0 +1,310 @@
+/* 
+  Localizable.strings
+  Smart Motorways
+
+  Created by Abdul Wahab on 05/06/2021.
+  
+*/
+
+"sign_in" = "Sign in";
+
+"welcome" = "Welcome";
+
+"email" = "Email";
+
+"ok" = "Ok";
+
+"yes" = "Yes";
+
+"no" = "No";
+
+"password" = "Password";
+
+"forgot_pass" = "Forgot Password?";
+
+"not_applied_yet" = "Don't have an account yet? Sign Up";
+
+"request_mtag" = "Request M-TAG";
+
+"already_have_account" = "Already have an account? Sign in";
+
+"sign_up" = "Sign Up";
+
+"signout" = "Sign out";
+
+"resent" = "OTP Resent";
+
+"firstname" = "First Name";
+
+"lastname" = "Last Name";
+
+"phone" = "Phone +923333333333";
+
+"mobile" = "Mobile number";
+
+"password" = "Password";
+
+"vehicleType" = "Vehicle type";
+
+"alert" = "Alert";
+
+"repeat_password" = "Repeat Password";
+
+"enterFirstName" = "Please enter first name";
+
+"enterLastName" = "Please enter last name";
+
+"enterEmail" = "Please enter valid email";
+
+"enterPhone" = "Please enter valid phone number";
+
+"enterCnic" = "Please enter valid CNIC number";
+
+"enterVehicleType" = "Please enter vechile type";
+
+"enterPassword" = "Please enter password";
+
+"number" = "Number";
+
+"cnic" = "CNIC Number";
+
+"cnicTitle" = "CNIC";
+
+"verification" = "Verification";
+
+"verify" = "Verify";
+
+"emailVerification" = "Email Verification";
+
+"emailSentto" = "We have sent code to your email";
+
+"didntReceiveCode" = "Didn't receive code? Resend";
+
+"resend" = "Resend";
+
+"changeEmail" = "Change Email";
+
+"mtagAssigned" = "M-Tag Assigned";
+
+"pending" = "Pending";
+
+"pendingApproval" = "Pending approval";
+
+"vehicleInfo" = "Vehicle information";
+
+"mtag" = "M-Tag ";
+
+"balance" = "Balance";
+
+"rs" = "Rs. ";
+
+"requestMtag" = "Request M-Tag";
+
+"requestNewMtag" = "Request New M-Tag";
+
+"scanCarDoc" = "Scan Car Registration Document";
+
+"addCarDoc" = "Add car document image";
+
+"addBalance" = "Add Balance";
+
+"make" = "Make and Model";
+
+"year" = "Year";
+
+"fuel" = "Fuel";
+
+"registeredIn" = "Registered in";
+
+"registrationNum" = "Registration Number";
+
+"ownerName" = "Owner name";
+
+"address" = "Address";
+
+"scanCar" = "Scan Car";
+
+"scanCnic" = "Scan CNIC";
+
+"enterMake" = "Please enter make";
+
+"enterYear" = "Please enter valid year";
+
+"enterFuel" = "Please enter fuel type";
+
+"enterYearofRegistration" = "Please enter valid year";
+
+"enterCityRegistration" = "Please enter city of registration";
+
+"enterRegnum" = "Please enter valid registration number";
+
+"enterOwnerName" = "Please enter owner name";
+
+"enteraddress" = "Please enter address";
+
+"uploadImage" = "Image upload";
+
+"uploadFrom" = "Upload image from";
+
+"camera" = "Camera";
+
+"photos" = "Photos";
+
+"cancel" = "Cancel";
+
+"seeMore" = "See More";
+
+"error" = "Error";
+
+"goHome" = "Go to home";
+
+"requestSubmitted" = "Request Summited Successfully go to home and check pending M-Tag";
+
+"requestChange" = "Request change";
+
+"recharge" = "Recharge";
+
+"car" = "Car";
+
+"transactionHistory" = "Transaction History";
+
+"deduction" = "Deduction";
+
+"added" = "Added";
+
+"carInformation" = "Car Information";
+
+"history" = "History";
+
+"fullname" = "Full name";
+
+"we_have_Sent_email" = "We have sent you code via SMS for mobile number verification";
+
+"profile" = "Profile";
+
+"general_error" = "Unknown error occured. Please try again";
+
+"connectivity_error" = "Please check your internet connection and try again";
+
+"missingImage" = "Missing image";
+
+"addImageCnicFront" = "Please add image of CNIC front side";
+
+"addImageCnicBack" = "Please add image of CNIC back side";
+
+"addImageCarFront" = "Please add image of car front side";
+
+"addImageCarBack" = "Please add image of car back side";
+
+"pendingMtag" = "Pending M-Tag";
+
+"referenceNumber" = "Reference # ";
+
+"status" = "Status";
+
+"inactive" = "In-Active";
+
+"filter" = "Filter";
+
+"selectMtag" = "Select M-Tag";
+
+"selectDate" = "Select Date";
+
+"from" = "From: ";
+
+"to" = "To: ";
+
+"apply" = "Apply";
+
+"noRecords" = "No records to show\nbetween STARTDATE to ENDDATE";
+
+"noRecordAvailable" = "No record(s)";
+
+"refNum" = "Reference number";
+
+"myMtag" = "My M-TAG";
+
+"rechargeMtag" = "Recharge M-TAG";
+
+"tollHistory" = "Toll History";
+
+"pendingMtag" = "Pending M-TAG";
+
+"tollCalculator" = "Toll Calculator";
+
+"searchByVehicle" = "SEARCH BY VEHICLE";
+
+"searchByMtag" = "SEARCH BY MTAG";
+
+"tollCharges" = "Toll Charges";
+
+"tollRate" = "Toll Rate";
+
+"calculate_toll_rate" = "CALCULATE TOLL RATE";
+
+"helpline" = "M-Tag Helpline";
+
+"sureLogout" = "Are you sure you want to sign out?";
+
+"enablebiometric" = "Enable Biometric Sign In";
+
+"signinFirstBiometric" = "Please Sign In using your CNIC and Mobile Number for the first time to enable your biometric Sign In. From next time onwards, you would need to tap on the Biometric icon to sign in using your biometric identity";
+
+"disablebiometric" = "Disable Biometric Sign In";
+
+"diablebiometricMsg" = "You would have to enter your CNIC and Mobile Number to Sign In if you disable your biometric Sign In. Are you sure you want to disable your biometric Sign In?";
+
+"watermark" = "ONE Network - M-TAG use only";
+
+"comingsoon" = "Coming Soon!";
+
+"comingSoonMsg" = "Toll Calculator and more exciting features coming soon.";
+
+"comingSoonPending" = "Pending M-Tag and more exciting features coming soon.";
+
+"comingSoonRequest" = "Request M-Tag and more exciting features coming soon.";
+
+"comingSoonRecharge" = "Recharge and more exciting features coming soon.";
+
+"biometricLogin" = "Biometric Sign In";
+
+"poweredBy" = "Powered by One Network";
+
+"version" = "Version ";
+
+"expiryDate" = "Expiry date";
+
+"couldNotSendOtp" = "OTP could not be sent";
+
+"retry" = "Retry";
+
+"feedback" = "Feedback";
+
+"complaintType" = "Complaint type";
+
+"remarks" = "Remarks";
+
+"submit" = "Submit";
+
+"submit_feedback" = "Submit feedback";
+
+"addYourRemarkHere" = "Add your remarks here";
+"addReasonHere" = "Add your reason here";
+
+"completeForm" = "Please complete the form";
+
+"needMtagAssigned" = "You need to have at least one M-Tag assigned to your profile to submit feedback";
+
+"noMtagAvailable" = "No M-Tag available";
+
+"account_not_exist" = "Account does not exist, please sign up or call 1313 for further assistance";
+
+"cnic_mobile_mismatch" = "CNIC and mobile number does not match in our records, please call 1313 for further assistance";
+
+"account_exist" = "Account already exist, please sign in to continue";
+
+"call1313" = "Call 1313";
+
+"success" = "Success";
+
+"feedback_done" = "Feedback has been submitted!";

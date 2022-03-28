@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddPopUpViewController" id="Y6W-OH-hqX" customClass="AddPopUpViewController" customModule="Smart_Motorways" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxF-dh-1Dt">
+                                <rect key="frame" x="188.5" y="792" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="42e-zH-8hi"/>
+                                    <constraint firstAttribute="width" constant="37" id="4c3-Tl-ZpX"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="crossPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pti-SC-Fze"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arI-NS-yg7">
+                                <rect key="frame" x="107.5" y="526" width="199" height="208"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVf-jS-YpF">
+                                        <rect key="frame" x="84.5" y="68" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="requestPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="I6Y-b3-3a7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ve7-rC-fdZ">
+                                        <rect key="frame" x="84.5" y="132" width="30" height="30"/>
+                                        <connections>
+                                            <action selector="addBalancePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OfX-2J-5rB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="screenBackground"/>
+                                <constraints>
+                                    <constraint firstItem="ve7-rC-fdZ" firstAttribute="centerX" secondItem="arI-NS-yg7" secondAttribute="centerX" id="0l2-pj-Xdg"/>
+                                    <constraint firstItem="bVf-jS-YpF" firstAttribute="top" secondItem="arI-NS-yg7" secondAttribute="top" constant="68" id="8nv-q6-kxr"/>
+                                    <constraint firstItem="ve7-rC-fdZ" firstAttribute="top" secondItem="bVf-jS-YpF" secondAttribute="bottom" constant="34" id="PjS-Ob-akf"/>
+                                    <constraint firstAttribute="width" constant="199" id="ZW6-Tg-la0"/>
+                                    <constraint firstItem="bVf-jS-YpF" firstAttribute="centerX" secondItem="arI-NS-yg7" secondAttribute="centerX" id="nVZ-ac-ty6"/>
+                                    <constraint firstAttribute="height" constant="208" id="sQS-6F-n82"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="arI-NS-yg7" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="5BZ-lY-7y4"/>
+                            <constraint firstItem="TxF-dh-1Dt" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="7nR-fv-8We"/>
+                            <constraint firstItem="TxF-dh-1Dt" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-33" id="eJL-wQ-W1Y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="arI-NS-yg7" secondAttribute="bottom" constant="128" id="qji-Lv-vCa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addBalanceButton" destination="ve7-rC-fdZ" id="DkR-IU-213"/>
+                        <outlet property="requestButton" destination="bVf-jS-YpF" id="ch2-J8-fbi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="36.251998901367188" height="36.251998901367188"/>
+        <namedColor name="screenBackground">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

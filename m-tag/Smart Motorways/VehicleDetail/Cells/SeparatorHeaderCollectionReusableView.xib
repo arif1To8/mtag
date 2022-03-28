@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeparatorHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="SeparatorHeaderCollectionReusableView" customModule="Smart_Motorways" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-Be-wS9">
+                    <rect key="frame" x="30" y="26" width="279.5" height="1"/>
+                    <color key="backgroundColor" name="textGray"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PsV-Hd-hMh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBP-bP-lcQ">
+                    <rect key="frame" x="30" y="53" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="y9p-Be-wS9" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="30" id="5gp-jl-r5O"/>
+                <constraint firstAttribute="top" secondItem="LBP-bP-lcQ" secondAttribute="top" constant="-53" id="Vz9-jE-7Eb"/>
+                <constraint firstItem="y9p-Be-wS9" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="26" id="Xvd-dh-DpE"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="y9p-Be-wS9" secondAttribute="trailing" constant="34.530000000000001" id="Ymw-hf-4o9"/>
+                <constraint firstItem="LBP-bP-lcQ" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="30" id="Ytx-Yv-q4k"/>
+            </constraints>
+            <connections>
+                <outlet property="transactionTitle" destination="LBP-bP-lcQ" id="bXW-aC-Xkq"/>
+            </connections>
+            <point key="canvasLocation" x="52.173913043478265" y="93.415178571428569"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <namedColor name="textGray">
+            <color red="0.36500000953674316" green="0.35699999332427979" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

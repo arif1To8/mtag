@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "iconfinder_2305613_call_contact_contact us_number_phone_icon.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
