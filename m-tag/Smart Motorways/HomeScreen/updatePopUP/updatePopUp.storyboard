@@ -4,66 +4,126 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Update Pop Up-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="updatePopUp" id="Y6W-OH-hqX" customClass="updatePopUp" customModule="Smart_Motorways" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7Q-Xy-WCD">
-                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <rect key="frame" x="57" y="338" width="300" height="220"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-zI-tT4">
-                                        <rect key="frame" x="129" y="28" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-zI-tT4">
+                                        <rect key="frame" x="83" y="32.5" width="134" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWs-dp-0ee">
+                                        <rect key="frame" x="20" y="86" width="260" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWs-dp-0ee">
-                                        <rect key="frame" x="129" y="83" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtK-Tj-vuO">
-                                        <rect key="frame" x="117" y="250" width="67" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtK-Tj-vuO">
+                                        <rect key="frame" x="30" y="156" width="240" height="44"/>
+                                        <color key="backgroundColor" name="orange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="B8K-n2-DTm"/>
+                                            <constraint firstAttribute="width" constant="240" id="TFv-UW-HDL"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Update">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="update" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vFQ-DA-jDe"/>
+                                        </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cti-B9-ENt">
+                                        <rect key="frame" x="0.0" y="65.5" width="300" height="0.5"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="BV8-uy-zRV"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7g3-o5-yd9">
+                                        <rect key="frame" x="20" y="20" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="JD2-gj-37d"/>
+                                            <constraint firstAttribute="height" constant="50" id="R56-L6-HmV"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="1Ph-Sv-2VE"/>
+                                    <constraint firstItem="HtK-Tj-vuO" firstAttribute="centerX" secondItem="H7Q-Xy-WCD" secondAttribute="centerX" id="0BW-rW-lWf"/>
+                                    <constraint firstAttribute="height" constant="220" id="1Ph-Sv-2VE"/>
+                                    <constraint firstAttribute="trailing" secondItem="xWs-dp-0ee" secondAttribute="trailing" constant="20" id="5cu-cb-UWf"/>
+                                    <constraint firstItem="Cti-B9-ENt" firstAttribute="leading" secondItem="H7Q-Xy-WCD" secondAttribute="leading" id="8CM-hm-ndq"/>
+                                    <constraint firstAttribute="bottom" secondItem="HtK-Tj-vuO" secondAttribute="bottom" constant="20" id="Adb-mp-J0c"/>
+                                    <constraint firstItem="xWs-dp-0ee" firstAttribute="leading" secondItem="H7Q-Xy-WCD" secondAttribute="leading" constant="20" id="LBZ-So-XG6"/>
                                     <constraint firstAttribute="width" constant="300" id="Xm8-7Z-IQg"/>
+                                    <constraint firstItem="7g3-o5-yd9" firstAttribute="top" secondItem="H7Q-Xy-WCD" secondAttribute="top" constant="20" id="bEk-dF-V77"/>
+                                    <constraint firstItem="GSf-zI-tT4" firstAttribute="centerX" secondItem="H7Q-Xy-WCD" secondAttribute="centerX" id="hEW-1U-95h"/>
+                                    <constraint firstItem="7g3-o5-yd9" firstAttribute="leading" secondItem="H7Q-Xy-WCD" secondAttribute="leading" constant="20" id="rs8-1r-x8M"/>
+                                    <constraint firstItem="Cti-B9-ENt" firstAttribute="top" secondItem="GSf-zI-tT4" secondAttribute="bottom" constant="12" id="sHr-We-ELS"/>
+                                    <constraint firstItem="GSf-zI-tT4" firstAttribute="centerY" secondItem="7g3-o5-yd9" secondAttribute="centerY" constant="-2" id="zEs-yg-25w"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cti-B9-ENt" secondAttribute="trailing" id="zfQ-Wx-lIs"/>
+                                    <constraint firstItem="xWs-dp-0ee" firstAttribute="top" secondItem="Cti-B9-ENt" secondAttribute="bottom" constant="20" id="zlp-Oy-MHP"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="H7Q-Xy-WCD" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5gQ-Zw-fKe"/>
                             <constraint firstItem="H7Q-Xy-WCD" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Hep-Ap-t8w"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblDetail" destination="xWs-dp-0ee" id="6o0-p4-a2D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="123"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logo" width="1018" height="562"/>
+        <namedColor name="orange">
+            <color red="0.84200000762939453" green="0.32699999213218689" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
     </resources>
 </document>

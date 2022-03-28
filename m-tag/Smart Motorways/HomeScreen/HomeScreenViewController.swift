@@ -84,9 +84,12 @@ class HomeScreenViewController: UIViewController, Storyboarded, UICollectionView
                 if  let allowedCode = (versionResponse.code ?? "00") as? String{
                     if allowedCode != "00"{
                         DispatchQueue.main.async {
-                            Helper.showAlertWithOneButton("Update Required", message: versionResponse.message ?? "This Version is not allowed!", buttonTitle: "Update", controller: self) { actionn in
-                                Helper.moveToAppstore()
-                            }
+                            
+                            Router.showUpdatePopUp(from: self, desc: versionResponse.message ?? "This Version is not allowed!")
+                            
+//                            Helper.showAlertWithOneButton("Update Required", message: versionResponse.message ?? "This Version is not allowed!", buttonTitle: "Update", controller: self) { actionn in
+//                                Helper.moveToAppstore()
+//                            }
                         }
                     }
                 }

@@ -175,6 +175,13 @@ class Router {
         currentVC.navigationController?.present(vc, animated: false, completion: nil)
     }
     
+    static func showUpdatePopUp(from currentVC: UIViewController, desc: String) {
+        let vc = updatePopUp.instantiate(storyBoardName: "updatePopUp")
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.desc = desc
+        currentVC.navigationController?.present(vc, animated: false, completion: nil)
+    }
+    
     static func showPendingMtagDetailPopUp(from currentVC: UIViewController, detail: PendingMtagObject) {
         let vc = PendingMtagDetailPopupViewController.instantiate(storyBoardName: "PendingMtagDetailPopup")
         vc.detail = detail

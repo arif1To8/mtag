@@ -64,6 +64,8 @@ class RechargeMtagViewController: UIViewController, Storyboarded {
 //        setupInitialView()
         if self.openFromVehicle{
             self.setupInitialView()
+            self.rechargeByTitle.isHidden = true
+            
         }else{
             getActiveMtags()
         }
@@ -148,8 +150,11 @@ class RechargeMtagViewController: UIViewController, Storyboarded {
                 mtagPickerView.isHidden = false
                 selectMtagLabel.text = "Select M-Tag"
             }
+            
             enterMTagField.isHidden = true
+            
         } else {
+            
             rechargeByTitle.text = "RECHARGE SELF"
             mtagPickerView.isHidden = true
             preSelectedMtag.isHidden = true

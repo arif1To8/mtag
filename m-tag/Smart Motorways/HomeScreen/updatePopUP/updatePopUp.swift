@@ -7,23 +7,24 @@
 
 import UIKit
 
-class updatePopUp: UIViewController {
+class updatePopUp: UIViewController, Storyboarded {
+    
+    var desc:String!
+    @IBOutlet weak var lblDetail: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.lblDetail.text = desc
     }
+
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func update(){
+        Helper.moveToAppstore()
     }
-    */
 
+    
+    
 }
+ 
